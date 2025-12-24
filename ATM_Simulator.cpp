@@ -22,11 +22,11 @@ string getDateTime() {
 
 int main() {
     string username = "Akhila";
-    string ipin = "1234";
-    int balance = 5000;
-    string transactions[50];
+    string ipin = "5678";          // Updated default PIN
+    int balance = 50000;           // Updated initial balance
+    string transactions[50];       // Max 50 transactions
     int tcount = 0;
-    int limit = 10000;
+    int limit = 15000;             // Updated daily withdrawal limit
     int dailyWithdraw = 0;
     int attempts = 0;
 
@@ -51,7 +51,8 @@ int main() {
                 cout << "Too many wrong attempts. Account locked.\n";
                 return 0;
             } else {
-                cout << "Incorrect PIN. Attempts left: " << (3 - attempts) << endl;
+                cout << "Incorrect PIN. Attempts left: " 
+                     << (3 - attempts) << endl;
             }
         }
     }
@@ -89,12 +90,13 @@ int main() {
             } else if (amt > balance) {
                 cout << "\nInsufficient balance.\n";
             } else if (dailyWithdraw + amt > limit) {
-                cout << "\nDaily withdrawal limit of ₹10,000 reached.\n";
+                cout << "\nDaily withdrawal limit of ₹15000 reached.\n";
             } else {
                 balance -= amt;
                 dailyWithdraw += amt;
                 string date = getDateTime();
-                transactions[tcount++] = date + " -" + to_string(amt) + " Withdraw";
+                transactions[tcount++] =
+                    date + " -" + to_string(amt) + " Withdraw";
                 cout << "\nPlease collect your cash.\n";
             }
             break;
@@ -107,7 +109,8 @@ int main() {
 
             balance += deposit;
             string date = getDateTime();
-            transactions[tcount++] = date + " +" + to_string(deposit) + " Deposit";
+            transactions[tcount++] =
+                date + " +" + to_string(deposit) + " Deposit";
             cout << "\nDeposit successful.\n";
             break;
         }
