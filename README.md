@@ -48,16 +48,15 @@ This project is ideal for **beginners** to understand menu-driven programs and t
 
 ## 👤 Author
 
-**Nirvan**  
-*C++ Programming Project – ATM Simulator*
+**Nirvan** 
 
 ---
 
 ## 📌 Notes
 
-- 🔐 Default PIN: `1234`
-- 💵 Initial Balance: ₹5000
-- 📆 Daily Withdrawal Limit: ₹10,000
+- 🔐 Default PIN: `5678`
+- 💵 Initial Balance: ₹50000
+- 📆 Daily Withdrawal Limit: ₹15000
 - 🧾 Maximum Transactions Stored: 50
 - 🗃 Transactions are stored temporarily using arrays
 
