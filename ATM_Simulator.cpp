@@ -4,7 +4,6 @@
 using namespace std;
 
 // Function to get current date-time as string
-//\\
 string getDateTime() {
     time_t now = time(0);
     tm *ltm = localtime(&now);
@@ -23,11 +22,11 @@ string getDateTime() {
 
 int main() {
     string username = "Akhila";
-    string ipin = "5678";          // Updated default PIN
-    int balance = 50000;           // Updated initial balance
-    string transactions[50];       // Max 50 transactions
+    string ipin = "5678";          
+    int balance = 50000;          
+    string transactions[50];      
     int tcount = 0;
-    int limit = 15000;             // Updated daily withdrawal limit
+    int limit = 15000;             
     int dailyWithdraw = 0;
     int attempts = 0;
 
