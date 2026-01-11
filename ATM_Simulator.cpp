@@ -21,12 +21,12 @@ string getDateTime() {
 }
 
 int main() {
-    string username = "Akhila";
+    string username = "Nirvan Jain";
     string ipin = "5678";          
-    int balance = 50000;          
-    string transactions[50];      
+    int balance = 500000;          
+    string transactions[25];      
     int tcount = 0;
-    int limit = 15000;             
+    int limit = 50000;             
     int dailyWithdraw = 0;
     int attempts = 0;
 
